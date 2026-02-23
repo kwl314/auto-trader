@@ -1,12 +1,38 @@
-# 🤖 Auto-Trader
+# 🤖 Auto-Trader v1.1
 
 **Algorithmic trading strategies and automation tools**
 
 An open-source collection of trading bots, backtesting frameworks, and market analysis tools.
 
-## Features
+## 🛠️ Tools
 
-### 1. Simple Moving Average Crossover Strategy
+| Tool | Description | Usage |
+|------|-------------|-------|
+| **sma-crossover.js** | SMA crossover trading strategy | `node sma-crossover.js --symbol BTCUSDT --short 7 --long 25` |
+| **rsi-strategy.js** | RSI-based trading signals | `node rsi-strategy.js --symbol ETHUSDT --period 14` |
+| **crypto-tracker.js** | Cryptocurrency price tracker | `node crypto-tracker.js --symbol BTC,ETH --interval 30` |
+| **stock-fetcher.js** | Stock data fetcher | `node stock-fetcher.js --symbol AAPL,MSFT` |
+
+## 🚀 Quick Start
+
+### Installation
+```bash
+git clone https://github.com/kwl314/auto-trader.git
+cd auto-trader
+npm install axios
+```
+
+### Crypto Price Tracking
+```bash
+node crypto-tracker.js --symbol BTC,ETH,SOL
+```
+
+### Stock Quotes
+```bash
+node stock-fetcher.js --symbol AAPL,GOOGL,MSFT
+```
+
+## 📈 Trading Strategies
 ```bash
 node sma-crossover.js --symbol BTCUSDT --short 7 --long 25 --interval 1h
 ```
